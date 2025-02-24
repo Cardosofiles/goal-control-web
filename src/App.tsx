@@ -1,7 +1,14 @@
+import { Dialog } from '@/components/ui/dialog'
+import { WeekSummary } from '@/components/week-summary'
+// import { CreateGoal } from '@/components/create-goal'
+// import { EmptyGoals } from './components/emptyy-goals'
+
 export function App() {
   return (
-    <>
-      <h1 className="">Vite + React</h1>
-    </>
+    <Dialog>
+      <WeekSummary />
+      {/* <EmptyGoals /> */}
+      {/* <CreateGoal /> */}
+    </Dialog>
   )
 }
