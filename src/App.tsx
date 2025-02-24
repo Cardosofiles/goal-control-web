@@ -1,11 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { EmptyGoals } from '@/components/empty-goals'
-import { Dialog } from '@/components/ui/dialog'
-import { WeekSummary } from '@/components/week-summary'
 import { CreateGoal } from './components/create-goal'
+import { EmptyGoals } from './components/empty-goals'
+import { Dialog } from './components/ui/dialog'
+import { WeekSummary } from './components/week-summary'
 
-import { getSummary } from '@/api/get-summary'
+import { getSummary } from './api/get-summary'
 
 const timerController = 1000 * 60 // 60 seconds
 

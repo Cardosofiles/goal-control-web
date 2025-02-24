@@ -1,9 +1,9 @@
 import { CiSquarePlus } from 'react-icons/ci'
 
-import { GoalTrakingLogo } from '@/components/goal-traking-logo'
-import { LetsStart } from '@/components/lets-start'
-import { Button } from '@/components/ui/button'
-import { DialogTrigger } from '@/components/ui/dialog'
+import { GoalTrakingLogo } from '../components/goal-traking-logo'
+import { LetsStart } from '../components/lets-start'
+import { Button } from '../components/ui/button'
+import { DialogTrigger } from '../components/ui/dialog'
 
 export function EmptyGoals() {
   return (

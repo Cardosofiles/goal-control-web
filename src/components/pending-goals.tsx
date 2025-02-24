@@ -3,11 +3,11 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { TbHandFinger } from 'react-icons/tb'
 
 // components
-import { OutlineButton } from '@/components/ui/outline-button'
+import { OutlineButton } from '../components/ui/outline-button'
 
 // http request functionality
-import { createGoalCompletion } from '@/api/create-goal-completion'
-import { getPendingGoals } from '@/api/get-pending-goals'
+import { createGoalCompletion } from '../api/create-goal-completion'
+import { getPendingGoals } from '../api/get-pending-goals'
 
 export function PendingGoals() {
   const queryClient = useQueryClient()

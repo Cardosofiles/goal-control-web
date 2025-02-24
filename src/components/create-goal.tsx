@@ -4,22 +4,22 @@ import { Controller, useForm } from 'react-hook-form'
 import { IoIosCloseCircleOutline } from 'react-icons/io'
 import { z } from 'zod'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import {
   DialogClose,
   DialogContent,
   DialogDescription,
   DialogTitle,
-} from '@/components/ui/dialog'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+} from '../components/ui/dialog'
+import { Input } from '../components/ui/input'
+import { Label } from '../components/ui/label'
 import {
   RadioGroup,
   RadioGroupIndicator,
   RadioGroupItem,
-} from '@/components/ui/radio-group'
+} from '../components/ui/radio-group'
 
-import { createGoal } from '@/api/create-goal'
+import { createGoal } from '../api/create-goal'
 
 const createGoalForm = z.object({
   title: z.string().min(1, { message: '⚠️ O título não pode estar vazio' }),

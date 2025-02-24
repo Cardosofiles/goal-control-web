@@ -3,15 +3,15 @@ import dayjs from 'dayjs'
 import { CiCircleCheck, CiSquarePlus } from 'react-icons/ci'
 import { FaChevronRight, FaDatabase } from 'react-icons/fa6'
 
-import { CreateGoal } from '@/components/create-goal'
-import { PendingGoals } from '@/components/pending-goals'
-import { TrakingIcon } from '@/components/traking-icon'
-import { Button } from '@/components/ui/button'
-import { DialogTrigger } from '@/components/ui/dialog'
-import { Progress, ProgressIndicator } from '@/components/ui/progress-bar'
-import { Separator } from '@/components/ui/separator'
+import { CreateGoal } from '../components/create-goal'
+import { PendingGoals } from '../components/pending-goals'
+import { TrakingIcon } from '../components/traking-icon'
+import { Button } from '../components/ui/button'
+import { DialogTrigger } from '../components/ui/dialog'
+import { Progress, ProgressIndicator } from '../components/ui/progress-bar'
+import { Separator } from '../components/ui/separator'
 
-import { getSummary } from '@/api/get-summary'
+import { getSummary } from '../api/get-summary'
 
 export function WeekSummary() {
   const { data } = useQuery({
